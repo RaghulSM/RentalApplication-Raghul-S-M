@@ -1,0 +1,120 @@
+.head{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.bars{
+  font-size: 30px;
+  margin-left: 20px;
+  color: white;
+}
+.barContents{
+  display: none;
+}
+.bars:hover .barContents{
+  display: grid;
+  position: absolute;
+}
+.button{
+  margin-right: 30px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+}
+.button a{
+  text-decoration: none;
+  color: rgb(0, 195, 255);
+  font-size: 20px;
+  font-weight: bolder;
+}
+.button a:hover{
+  color: rgb(11, 244, 11)
+}
+.segment :hover{
+  color: white;
+}
+.segment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(19, 241, 219, 0.834);
+}
+.segment .homeicon{
+  font-size: 25px;
+  margin-left: 20px;
+  color: black;
+}
+.homeappliances{
+  margin-right: 20px;
+}
+.sublink{
+  display: none;
+  text-decoration: none;
+  background-color: rgba(19, 241, 219, 0.834);
+  margin-top: -25px;
+  width: 160px;
+  margin-left: -40px;
+}
+.sublink a{
+  text-decoration: none;
+  margin-top: 20px;
+  color: black;
+  margin-left: 20px;
+}
+.sublink a:hover{
+  color: white;
+}
+.automobile:hover .automobilesub{
+  display:grid;
+  position: absolute;
+
+}
+.watches:hover .watchessub{
+  display:grid;
+  position: absolute;
+}
+.camera:hover .camerasub{
+  display:grid;
+  position: absolute;
+}
+.clothes:hover .clothessub{
+  display:grid;
+  position: absolute;
+}
+.homeappliances:hover .homeappliancessub{
+  display:grid;
+  position: absolute;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color:rgb(0, 0, 0);
+  margin-top: 20px;
+  color: white;
+}
+.logos a{
+  margin-left: 15px;
+  font-size: 25px;
+}
+#insta{
+  color: rgb(255, 72, 139);
+}
+#facebook{
+  color: blue;
+}
+#twitter{
+  color: rgb(0, 166, 255);
+}
+#email{
+  color: rgba(255, 170, 0, 0.8);
+}
+.aboutus{
+  width: 150px;
+}
+.policy{
+   margin-right: 30px;
+   width: 150px;
+}

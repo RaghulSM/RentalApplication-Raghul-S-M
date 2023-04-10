@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="contents" *ngFor="let item of products">
+    <div class="image">
+      <img src="{{item.image}}" alt="">
+    </div>
+    <div class="title">
+      <h3>{{item.title}}</h3>
+    </div>
+    <div class="details">
+      <h3>{{item.details}}</h3>
+    </div>
+    <div class="price">
+      <h4>{{item.price}}</h4>
+    </div>
+    <div class="deletebutton">
+      <button (click)="deletedata(item.id)" >delete</button>
+    </div>
+  </div>
+
+  <!-- --------------------------------Content Adding--------------------------------------------------------------------------------------------------------------- -->
+  <div class="productForm">
+    <form (submit)="addItem()">
+      <div>
+        <h3 class="heading">Car Details</h3>
+      </div>
+      <div>
+        <label for="">Image URL:</label>
+        <input type="text" name="URL" [(ngModel)]="image">
+      </div>
+      <div>
+        <label for="">Title:</label>
+        <input type="text" name="title" [(ngModel)]="title">
+      </div>
+       <div>
+        <label for="">Details:</label>
+        <input type="text" name="details" [(ngModel)]="details">
+      </div>
+      <div>
+        <label for="">Price:</label>
+        <input type="text" name="price" [(ngModel)]="price">
+      </div>
+      <div>
+        <button class="addbutton">Add</button>
+      </div>
+    </form>
+  </div>
+
+  </div>

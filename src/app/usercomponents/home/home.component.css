@@ -1,0 +1,23 @@
+.home{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+#adminhome{
+  width: 350px;
+  height: 500px;
+  border: 2px solid;
+  background-color:rgb(0, 0, 0);
+  margin-top: 20px;
+}
+#adminhome img{
+  width: 350px;
+  height: 300px;
+}
+#adminhome h3,h4{
+  color: white;
+}
+#adminhome >.title,.discount,.slogan{
+  margin-top: 40px;
+  text-align: center;
+}

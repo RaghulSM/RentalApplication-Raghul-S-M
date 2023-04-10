@@ -1,0 +1,29 @@
+<div class="form">
+  <form [formGroup]="signupform" (submit)="submit()">
+    <div class="h1">
+      <h1>Create Account</h1>
+    </div>
+    <div>
+      <input type="text" placeholder="Name" formControlName="username" [(ngModel)]="username" name="name">
+    </div>
+    <div>
+      <input type="email" placeholder="Email id" formControlName="email" [(ngModel)]="emailid" name="emailid">
+    </div>
+    <div>
+      <input type="password" placeholder="Password" formControlName="password" [(ngModel)]="password" name="password">
+    </div>
+    <div id="confrimpassword">
+      <input type="password" placeholder="Confrim Password" formControlName="confrimpassword" [(ngModel)]="confrimpassword" name="confrimpassword">
+    </div>
+    <div>
+      <button [disabled]="signupform.invalid">Create Account</button>
+    </div>
+    <div class="back">
+      <a routerLink="/login">Back to Login</a>
+    </div>
+  </form>
+</div>
+
+
+
+

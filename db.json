@@ -1,0 +1,103 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "name": "raghul s m",
+      "emailid": "raghulmanokaran@gmail.com",
+      "password": "11111",
+      "id": 1
+    },
+    {
+      "name": "mannaran",
+      "emailid": "mannaran@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "raghulsm",
+      "emailid": "raghulmanokaran2335@gmail.com",
+      "password": "12345678",
+      "id": 3
+    }
+  ],
+  "homecontent": [
+    {
+      "image": "assets\\image\\cameras\\camera1.png",
+      "title": "camera",
+      "discount": "On 20% Discount",
+      "slogan": "Click your Candit Today",
+      "redirect": "DSLRcameras",
+      "id": 1
+    },
+    {
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "Sports Bikes",
+      "discount": "On 25% Discount",
+      "slogan": "Get Your Wings Now",
+      "redirect": "bike",
+      "id": 5
+    }
+  ],
+  "bikes": [
+    {
+      "image": "assets\\image\\bikes\\bike1.png",
+      "title": "Yamaha R1",
+      "details": "1000CC",
+      "price": "2000/Hour",
+      "id": 1
+    },
+    {
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "BMW S1000RR",
+      "details": "1000CC",
+      "price": "2200/Hour",
+      "id": 2
+    },
+    {
+      "image": "assets\\image\\bikes\\bike3.png",
+      "title": "Yamaha R1 M",
+      "details": "1000CC Cross Plane",
+      "price": "2200/Hour",
+      "id": 3
+    }
+  ],
+  "cars": [
+    {
+      "image": "assets\\image\\cars\\car1.png",
+      "title": "BMW ",
+      "details": "3 Series",
+      "price": "5000/Hour",
+      "id": 1
+    }
+  ],
+  "traveller": [],
+  "digitalWatches": [],
+  "analogWatches": [],
+  "DSLRCameras": [],
+  "digitalCameras": [],
+  "vedioCameras": [],
+  "partywareMen": [],
+  "partywareWomen": [],
+  "weddingwareMen": [],
+  "weddingwareWomen": [],
+  "refrigerator": [],
+  "washingMachine": [],
+  "mixer": [],
+  "grinder": []
+}

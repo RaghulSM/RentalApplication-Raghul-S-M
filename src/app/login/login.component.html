@@ -1,0 +1,23 @@
+<div class="form">
+  <form [formGroup]="loginform" (submit)="validate()">
+    <div class="h1">
+      <h1>Login</h1>
+    </div>
+    <div class="email">
+      <input  name="email" formControlName="emails" [(ngModel)]="emailid" placeholder="EmailId">
+    </div>
+    <div class="password">
+      <input type="password" name="password" formControlName="password" [(ngModel)]="password" placeholder="Password">
+    </div>
+    <div class="loginbtn">
+      <button [disabled]="loginform.invalid">Login</button>
+    </div>
+    <div class="forgetpassword">
+      <a>Forgot password?</a>
+    </div>
+    <div class="createaccount">
+      <a routerLink="/signup">Create Account</a>
+    </div>
+  </form>
+</div>
+
