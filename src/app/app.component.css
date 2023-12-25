@@ -1,49 +1,78 @@
 .head{
   display: flex;
   flex-direction:row;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
-  background-color: black;
 }
+
 .bars{
   font-size: 30px;
   margin-left: 20px;
-  color: white;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px;
+  cursor: pointer;
 }
 .barContents{
   display: none;
+  background-color: rgba(0, 0, 0, 0.93);
+  width: 140px;
+  margin-left: 20px;
+}
+.barContents a{
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  font-size:20px;
+  text-align: left;
+  margin-left: 15px;
 }
 .bars:hover .barContents{
   display: grid;
   position: absolute;
 }
+.homeicon:hover{
+  color:  rgb(11, 244, 11) !important;
+}
 .button{
-  margin-right: 30px;
-  width: 80px;
+  width: 120px;
+  margin-right: 20px;
   text-align: center;
   border-radius: 10px;
+
+
 }
 .button a{
   text-decoration: none;
-  color: rgb(0, 195, 255);
-  font-size: 20px;
+  color: rgb(42, 107, 236);
+  font-size: 25px;
   font-weight: bolder;
+}
+.logoutbutton{
+  cursor: pointer;
 }
 .button a:hover{
   color: rgb(11, 244, 11)
 }
 .segment :hover{
-  color: white;
+  color:  rgb(11, 244, 11)
 }
 .segment{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: rgba(19, 241, 219, 0.834);
+  justify-content: space-between;
 }
+.segment h4{
+  font-size: larger;
+  cursor: pointer;
+}
+ .segmentName{
+  margin-left: 80px;
+}
+
 .segment .homeicon{
   font-size: 25px;
-  margin-left: 20px;
   color: black;
 }
 .homeappliances{
@@ -52,19 +81,21 @@
 .sublink{
   display: none;
   text-decoration: none;
-  background-color: rgba(19, 241, 219, 0.834);
-  margin-top: -25px;
+  background-color: rgb(0, 0, 0);
   width: 160px;
-  margin-left: -40px;
+  margin-top: -20px;
+  border-radius: 10px 30px 30px 10px;
+
 }
 .sublink a{
   text-decoration: none;
   margin-top: 20px;
-  color: black;
+  margin-bottom: 10px;
+  color: white;
   margin-left: 20px;
 }
 .sublink a:hover{
-  color: white;
+  color: rgb(116, 241, 33);
 }
 .automobile:hover .automobilesub{
   display:grid;
@@ -88,33 +119,77 @@
   position: absolute;
 }
 
-footer{
+
+
+footer {
+  background-color: #14111122;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
-  background-color:rgb(0, 0, 0);
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 20px;
-  color: white;
+
 }
-.logos a{
-  margin-left: 15px;
-  font-size: 25px;
+
+footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
 }
-#insta{
-  color: rgb(255, 72, 139);
+
+.contactus {
+  flex: 1;
+  margin-right: 20px;
 }
-#facebook{
-  color: blue;
+
+.logos {
+  display: flex;
+  gap: 15px;
 }
-#twitter{
-  color: rgb(0, 166, 255);
+
+.logos a {
+  color: #333;
+  font-size: 1.25rem;
+  transition: color 0.3s ease-in-out;
 }
-#email{
-  color: rgba(255, 170, 0, 0.8);
+
+.logos a:hover {
+  color: #007bff;
 }
-.aboutus{
-  width: 150px;
+
+
+.aboutus {
+  flex: 1;
+  margin-right: 20px;
 }
-.policy{
-   margin-right: 30px;
-   width: 150px;
+
+.aboutuscont p {
+  color: #555;
+  line-height: 1.5;
+}
+
+
+.policy {
+  flex: 1;
+}
+
+.policycont p {
+  color: #555;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactus,
+  .aboutus,
+  .policy {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }

@@ -24,34 +24,84 @@
       "id": 1
     },
     {
-      "name": "mannaran",
-      "emailid": "mannaran@gmail.com",
+      "name": "manokaran",
+      "emailid": "manokaran@gmail.com",
       "password": "123456",
       "id": 2
     },
     {
       "name": "raghulsm",
       "emailid": "raghulmanokaran2335@gmail.com",
-      "password": "12345678",
+      "password": "123",
       "id": 3
+    },
+    {
+      "name": "smr",
+      "emailid": "smr@gmail.com",
+      "password": "1111",
+      "id": 4
+    },
+    {
+      "name": "demo",
+      "emailid": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "raghul",
+      "emailid": "smraghul@gmail.com",
+      "password": "R@ghul123",
+      "id": 6
     }
   ],
   "homecontent": [
     {
-      "image": "assets\\image\\cameras\\camera1.png",
-      "title": "camera",
-      "discount": "On 20% Discount",
-      "slogan": "Click your Candit Today",
-      "redirect": "DSLRcameras",
-      "id": 1
-    },
-    {
       "image": "assets\\image\\bikes\\bike2.png",
-      "title": "Sports Bikes",
-      "discount": "On 25% Discount",
+      "title": "BMW S1000RR",
+      "discount": "",
       "slogan": "Get Your Wings Now",
       "redirect": "bike",
+      "id": 2
+    },
+    {
+      "image": "assets\\image\\cars\\car1.png",
+      "title": "BMW i4",
+      "discount": "",
+      "slogan": "Just Take a Long Drive",
+      "redirect": "car",
+      "id": 3
+    },
+    {
+      "image": "assets\\image\\watches\\watch.png",
+      "title": "Analog Watches ",
+      "discount": "",
+      "slogan": "Complete Your Look",
+      "redirect": "analogwatches",
+      "id": 4
+    },
+    {
+      "image": "https://th.bing.com/th/id/R.1ce1bec5b30b5d725f6c371602a7f074?rik=DL6Yslo4WvW79g&riu=http%3a%2f%2fwww.cda.eu%2fconnector%2fproductimages%2fshow%2fPC87SC_large.jpg&ehk=y1iSVWJVevcjQsA5ByByl8MuqlKYfkFkKRF6jpq7IQI%3d&risl=&pid=ImgRaw&r=0",
+      "title": "Refrigerator",
+      "discount": "",
+      "slogan": "Keep Your Food Fresh",
+      "redirect": "refrigerator",
       "id": 5
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.MKZ9NLgmtl7gCtWuomfBrwHaHa?pid=ImgDet&rs=1",
+      "title": "Washing Machine",
+      "discount": "",
+      "slogan": "Easy Wash Right Here",
+      "redirect": "washingmachine",
+      "id": 6
+    },
+    {
+      "image": "assets\\image\\cameras\\camera5.png",
+      "title": "DSLR Camera",
+      "discount": "",
+      "slogan": "Click your Candit",
+      "redirect": "DSLRcameras",
+      "id": 8
     }
   ],
   "bikes": [
@@ -59,45 +109,1626 @@
       "image": "assets\\image\\bikes\\bike1.png",
       "title": "Yamaha R1",
       "details": "1000CC",
-      "price": "2000/Hour",
+      "price": "2000",
+      "availability": "Available",
       "id": 1
     },
     {
       "image": "assets\\image\\bikes\\bike2.png",
       "title": "BMW S1000RR",
       "details": "1000CC",
-      "price": "2200/Hour",
+      "price": 2200,
+      "availability": "Available",
       "id": 2
     },
     {
-      "image": "assets\\image\\bikes\\bike3.png",
-      "title": "Yamaha R1 M",
-      "details": "1000CC Cross Plane",
-      "price": "2200/Hour",
-      "id": 3
+      "image": "assets\\image\\bikes\\bike5.png",
+      "title": "GSXR 1000",
+      "details": "1000CC",
+      "price": 2500,
+      "availability": "Available",
+      "id": 4
+    },
+    {
+      "image": "assets\\image\\bikes\\bike8.png",
+      "title": "R15 V3",
+      "details": "155CC",
+      "price": 500,
+      "availability": "Unavailable",
+      "id": 5
+    },
+    {
+      "image": "https://www.drivespark.com/bikes-photos/models/750x550/royalenfieldhimalayan_1667814935.jpg/3/x.pagespeed.ic.Uz0L3T1TOU.jpg",
+      "title": "RE Himalayan",
+      "details": "400CC",
+      "price": 1000,
+      "availability": "Available",
+      "id": 6
+    },
+    {
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/5/XZ/HI/WI/68853065/honda-unicorn-bike.png",
+      "title": "Honda Unicorn",
+      "details": "150CC",
+      "price": 600,
+      "availability": "Available",
+      "id": 7
+    },
+    {
+      "image": "https://cdn.bajajauto.com/-/media/Assets/bajajauto/home-page/Product-Highlights/motorcycle-img/Motorcycle-3.ashx",
+      "title": "Bajaj Dominor",
+      "details": "400CC",
+      "price": 1000,
+      "availability": "Available",
+      "id": 8
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpzv3AsqBTtqOQI1wJf_OmFspuQdSlHxmXFBg-j8KTDFiOBonooujJrcRglbgSYz5ybE&usqp=CAU",
+      "title": "Aprila RSV4",
+      "details": "1000",
+      "price": 2300,
+      "availability": "Available",
+      "id": 9
     }
   ],
   "cars": [
     {
       "image": "assets\\image\\cars\\car1.png",
-      "title": "BMW ",
+      "title": "BMW",
       "details": "3 Series",
-      "price": "5000/Hour",
-      "id": 1
+      "price": 5000,
+      "id": 1,
+      "availability": "Available"
+    },
+    {
+      "image": "assets\\image\\cars\\car3.png",
+      "title": "Mercedes-Benz",
+      "details": "E-Class",
+      "price": 6000,
+      "id": 2,
+      "availability": "Available"
+    },
+    {
+      "image": "assets\\image\\cars\\car6.png",
+      "title": "Audi",
+      "details": "A6",
+      "price": 5000,
+      "id": 3,
+      "availability": "Unavailable"
+    },
+    {
+      "image": "https://imgd.aeplcdn.com/600x337/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-46.jpeg?isig=0&q=75",
+      "title": "Mahendra ",
+      "details": "Scorpio",
+      "price": 2000,
+      "availability": "Available",
+      "id": 5
+    },
+    {
+      "image": "https://cars.tatamotors.com/images/dark/m-altroz-home.jpg",
+      "title": "Tata",
+      "details": "Altroz",
+      "price": 2000,
+      "availability": "Available",
+      "id": 7
+    },
+    {
+      "image": "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/45278/xuv400-exterior-right-front-three-quarter-4.jpeg?isig=0&q=75",
+      "title": "Mahendra",
+      "details": "XUV400",
+      "price": 2500,
+      "availability": "Available",
+      "id": 9
+    },
+    {
+      "image": "https://cars.tatamotors.com/images/punch/punch-suv-home-mob.png",
+      "title": "Tata",
+      "details": "Punch",
+      "price": 1800,
+      "availability": "Available",
+      "id": 10
+    },
+    {
+      "image": "https://www.drivespark.com/car-image/340x255x100/car/x2627666-maruti_swift.jpg.pagespeed.ic.epYjQvzDdo.jpg",
+      "title": "Suzuki",
+      "details": "Shift",
+      "price": 1800,
+      "availability": "Available",
+      "id": 11
     }
   ],
   "traveller": [],
-  "digitalWatches": [],
-  "analogWatches": [],
-  "DSLRCameras": [],
-  "digitalCameras": [],
+  "digitalWatches": [
+    {
+      "image": "assets\\image\\watches\\watch1.png",
+      "title": "Realme ",
+      "details": "Unisex Watch",
+      "price": "100",
+      "id": 1
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.OieLn9gf_po12esq2f_poQHaHa?pid=ImgDet&w=500&h=500&rs=1",
+      "title": "KW10 Smart Watch",
+      "details": "Womens Watch",
+      "price": 240,
+      "availability": "Available",
+      "id": 3
+    },
+    {
+      "image": "https://www.bhphotovideo.com/images/images2500x2500/apple_mlch2ll_a_watch_sport_smartwatch_38mm_1187204.jpg",
+      "title": "Apple",
+      "details": "Womens Watch",
+      "price": 300,
+      "availability": "Available",
+      "id": 4
+    },
+    {
+      "image": "https://www.bhphotovideo.com/images/images2500x2500/apple_mnq02ll_a_apple_watch_series_2_1280624.jpg",
+      "title": "Apple Watch Series 2",
+      "details": "Mens Watch",
+      "price": 300,
+      "availability": "Available",
+      "id": 6
+    }
+  ],
+  "analogWatches": [
+    {
+      "image": "assets\\image\\watches\\watch.png",
+      "title": "Titan",
+      "details": "Mens Watch",
+      "price": "150",
+      "id": 1
+    },
+    {
+      "image": "https://i5.walmartimages.com/asr/89aef5ff-f309-4510-9e8a-1164bbebbc3f_1.2776031611af8481783698285bfae2cd.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+      "title": "citizen",
+      "details": "Mens Watch",
+      "price": 180,
+      "availability": "Available",
+      "id": 4
+    },
+    {
+      "image": "https://images.qvc.com/is/image/j/80/j483780.001",
+      "title": "Casio",
+      "details": "Mens Watch",
+      "price": 150,
+      "availability": "Available",
+      "id": 7
+    },
+    {
+      "image": "https://i.pinimg.com/originals/4a/a1/97/4aa19713256c4cba04da748d19a37c0e.jpg",
+      "title": "Fossil",
+      "details": "Womens Watch",
+      "price": 200,
+      "availability": "Available",
+      "id": 9
+    }
+  ],
+  "DSLRCameras": [
+    {
+      "image": "assets\\image\\cameras\\camera3.png",
+      "title": "Sony ",
+      "details": "Mark 2 with 50mm Lense",
+      "price": "600",
+      "id": 1
+    },
+    {
+      "image": "https://th.bing.com/th/id/R.613a8f40cb2958a6d5884c5848e034f8?rik=3R9Qxvw6jT65vA&riu=http%3a%2f%2fwww.bhphotovideo.com%2fimages%2fimages2500x2500%2fcanon_1263c005_eos_80d_dslr_camera_1225876.jpg&ehk=q7iUuM1osOg0j72aJ9G%2bAHfczWOH44VRoHxTAafiWjA%3d&risl=&pid=ImgRaw&r=0",
+      "title": "Canon EOS 80D DSLR Camera with 18-55mm Lens",
+      "details": "With 2 Batterys and 128GB SD Card",
+      "price": 700,
+      "availability": "Available",
+      "id": 2
+    },
+    {
+      "image": "https://www.ecoustics.com/electronics/products/new/588645.jpg",
+      "title": "Canon EOS 7D Mark",
+      "details": "With Battery and 128GB SD Card",
+      "price": 400,
+      "availability": "Available",
+      "id": 4
+    },
+    {
+      "image": "https://www.bhphotovideo.com/images/images2500x2500/nikon_d750_dslr_camera_with_1082604.jpg",
+      "title": "Nikon D750 DSLR Camera ",
+      "details": "With 24-120mm Lens, 2Batterys and 128GB SD Card",
+      "price": 400,
+      "availability": "Available",
+      "id": 6
+    }
+  ],
+  "digitalCameras": [
+    {
+      "image": "https://th.bing.com/th/id/OIP.IUCbRxgY-mDNS15NWJpvBwHaHa?pid=ImgDet&rs=1",
+      "title": "Nikon Coolpix S9300 Digital Camera",
+      "details": "With 64GB SD Card",
+      "price": 100,
+      "availability": "Available",
+      "id": 1
+    },
+    {
+      "image": "https://www.bhphotovideo.com/images/images2500x2500/Nikon_26225_CoolPix_S5100_Compact_Digital_729139.jpg",
+      "title": "Nikon CoolPix S5100 Compact Digital Camera",
+      "details": "With 64GB SD Card",
+      "price": 100,
+      "availability": "Available",
+      "id": 2
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.7chpk3R2rcZAXcuplAHIDgHaHa?pid=ImgDet&rs=1",
+      "title": "Nikon Coolpix S6200 Digital Camera",
+      "details": "With 64GB SD Card",
+      "price": 100,
+      "availability": "Available",
+      "id": 3
+    },
+    {
+      "image": "https://www.bhphotovideo.com/images/images2000x2000/Canon_6189B001_PowerShot_A2400_Digital_Camera_842862.jpg",
+      "title": "Canon PowerShot A2400 IS Digital Camera ",
+      "details": "With 128GB SD Card",
+      "price": 120,
+      "availability": "Available",
+      "id": 4
+    }
+  ],
   "vedioCameras": [],
   "partywareMen": [],
   "partywareWomen": [],
   "weddingwareMen": [],
   "weddingwareWomen": [],
-  "refrigerator": [],
-  "washingMachine": [],
-  "mixer": [],
-  "grinder": []
+  "refrigerator": [
+    {
+      "image": "https://th.bing.com/th/id/R.1ce1bec5b30b5d725f6c371602a7f074?rik=DL6Yslo4WvW79g&riu=http%3a%2f%2fwww.cda.eu%2fconnector%2fproductimages%2fshow%2fPC87SC_large.jpg&ehk=y1iSVWJVevcjQsA5ByByl8MuqlKYfkFkKRF6jpq7IQI%3d&risl=&pid=ImgRaw&r=0",
+      "title": "CDA Refrigerator",
+      "details": "2 Doors 2 Freezer",
+      "price": 800,
+      "availability": "Available",
+      "id": 1
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.UlJOK-i5icnFsG0Qa1pXoAHaHa?pid=ImgDet&rs=1",
+      "title": "Galanz Fridge",
+      "details": "Double Door",
+      "price": 300,
+      "availability": "Available",
+      "id": 3
+    },
+    {
+      "image": "https://5.imimg.com/data5/VT/PG/GG/SELLER-53232084/samsung-refrigerator-20m-172-yu7-192-ltr-500x500.jpg",
+      "title": "Samsung Fridge",
+      "details": "Single Door",
+      "price": 250,
+      "availability": "Available",
+      "id": 6
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.QF02YKSKxP9y_6jf9jMrLgHaHa?pid=ImgDet&w=500&h=500&rs=1",
+      "title": "Samsung Fridge",
+      "details": "Double Door",
+      "price": 300,
+      "availability": "Available",
+      "id": 8
+    }
+  ],
+  "washingMachine": [
+    {
+      "image": "https://th.bing.com/th/id/OIP.MKZ9NLgmtl7gCtWuomfBrwHaHa?pid=ImgDet&rs=1",
+      "title": "Goodrej Washing Machine",
+      "details": "7.5 Kg Front Load",
+      "price": 400,
+      "availability": "Available",
+      "id": 1
+    },
+    {
+      "image": "https://qph.fs.quoracdn.net/main-qimg-2eb654dec2b04ce22424ce32651c92ad",
+      "title": "IFB Washing Machine",
+      "details": "5.0 Kg Front Load",
+      "price": 200,
+      "availability": "Available",
+      "id": 2
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.LlgM6qR9K19z4fWGILtXLQHaHa?pid=ImgDet&rs=1",
+      "title": "Samsung Washing Machine",
+      "details": "5.0 Kg Front Load",
+      "price": 200,
+      "availability": "Available",
+      "id": 3
+    },
+    {
+      "image": "https://www.compareprix.in/images/product/large/samsung-wa62n4422bs-6-2-kg-fully-automatic-top-loading-washing-machine-side.jpeg",
+      "title": "Samsung Washing Machine",
+      "details": "6.0 Kg Top Load",
+      "price": 220,
+      "availability": "Available",
+      "id": 5
+    }
+  ],
+  "mixer": [
+    {
+      "image": "https://images.jdmagicbox.com/quickquotes/images_main/prestige-regal-mixer-grinder-750-w-3-stainless-steel-jar-1-juicer-jar-184928395-g94zp.jpg",
+      "title": "Prestige Regal",
+      "details": " 750W With 4 Jars",
+      "price": 180,
+      "availability": "Available",
+      "id": 2
+    },
+    {
+      "image": "https://rukminim2.flixcart.com/image/850/1000/ksez24w0/mixer-grinder-juicer/b/o/g/neo-flipkart-smartbuy-original-imag5zhjvtsy8hyj.jpeg?q=90",
+      "title": "Flipkart SmartBuy Neo Power",
+      "details": "600W With 4 Jars",
+      "price": 160,
+      "availability": "Available",
+      "id": 4
+    },
+    {
+      "image": "https://media.jointlook.com/customPhotos/productImages/sunflame-mixer-grinder-JLKA04-01.jpg",
+      "title": "Sunflame",
+      "details": "500W With 3 Jars",
+      "price": 120,
+      "availability": "Available",
+      "id": 6
+    },
+    {
+      "image": "https://www.reliancedigital.in/medias/Butterfly-M0190M00000-MIXERS-492573347-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1NzA4NHxpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDMyLzk3NDMwOTA2MTQzMDIuanBnfDQyYmY2MmI1Njg1ZDlhNjNhMjYxYjQxOWQ0MDdiM2E1ZDBjN2NmYjIzMjY1YWVkYjc5YjRmOTRmZTY2NTQ0MGY",
+      "title": "Butterfly",
+      "details": "750W With 4 Jars",
+      "price": 180,
+      "availability": "Available",
+      "id": 8
+    },
+    {
+      "image": "https://bigelectronicdeals.com/wp-content/uploads/2022/09/Philips-Mixer-Grinder-1.jpg",
+      "title": "Philips",
+      "details": "750W With 3 Jars",
+      "price": 160,
+      "availability": "Available",
+      "id": 10
+    },
+    {
+      "image": "https://bigdeals.lk/uploads/product/normal/bdlpxproduolarge.jpg",
+      "title": "Preethi - Xpro Duo",
+      "details": "1300W With 2 Jars",
+      "price": 160,
+      "availability": "Available",
+      "id": 12
+    }
+  ],
+  "grinder": [],
+  "favourites": [
+    {
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "BMW S1000RR",
+      "details": "1000CC",
+      "price": "2200",
+      "productid": 2,
+      "userid": "",
+      "id": 12
+    },
+    {
+      "image": "assets\\image\\cars\\car1.png",
+      "title": "BMW",
+      "details": "3 Series",
+      "price": 5000,
+      "productid": 1,
+      "userid": 5,
+      "id": 14
+    },
+    {
+      "image": "assets\\image\\cameras\\camera2.png",
+      "title": "sdvsd",
+      "details": "sdvsd",
+      "price": "120",
+      "productid": 2,
+      "userid": 5,
+      "id": 15
+    },
+    {
+      "image": "assets\\image\\cars\\car3.png",
+      "title": "Mercedes-Benz",
+      "details": "E-Class",
+      "price": 6000,
+      "productid": 2,
+      "userid": "5",
+      "id": 21
+    },
+    {
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "BMW S1000RR",
+      "details": "1000CC",
+      "price": 2200,
+      "productid": 2,
+      "userid": "5",
+      "id": 22
+    },
+    {
+      "image": "https://imgd.aeplcdn.com/600x337/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-46.jpeg?isig=0&q=75",
+      "title": "Mahendra ",
+      "details": "Scorpio",
+      "price": 2000,
+      "productid": 5,
+      "userid": "3",
+      "id": 24
+    },
+    {
+      "image": "assets\\image\\cars\\car6.png",
+      "title": "Audi",
+      "details": "A6",
+      "price": 5000,
+      "productid": 3,
+      "userid": "3",
+      "id": 25
+    },
+    {
+      "image": "assets\\image\\bikes\\bike1.png",
+      "title": "Yamaha R1",
+      "details": "1000CC",
+      "price": "2000",
+      "productid": 1,
+      "userid": "4",
+      "id": 26
+    },
+    {
+      "image": "assets\\image\\cars\\car6.png",
+      "title": "Audi",
+      "details": "A6",
+      "price": 5000,
+      "productid": 3,
+      "userid": "4",
+      "id": 27
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.7chpk3R2rcZAXcuplAHIDgHaHa?pid=ImgDet&rs=1",
+      "title": "Nikon Coolpix S6200 Digital Camera",
+      "details": "With 64GB SD Card",
+      "price": 100,
+      "productid": 3,
+      "userid": "4",
+      "id": 28
+    },
+    {
+      "image": "https://qph.fs.quoracdn.net/main-qimg-2eb654dec2b04ce22424ce32651c92ad",
+      "title": "IFB Washing Machine",
+      "details": "5.0 Kg Front Load",
+      "price": 200,
+      "productid": 2,
+      "userid": "4",
+      "id": 29
+    },
+    {
+      "image": "https://i5.walmartimages.com/asr/89aef5ff-f309-4510-9e8a-1164bbebbc3f_1.2776031611af8481783698285bfae2cd.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+      "title": "citizen",
+      "details": "Mens Watch",
+      "price": 180,
+      "productid": 4,
+      "userid": "4",
+      "id": 30
+    },
+    {
+      "image": "https://www.bhphotovideo.com/images/images2500x2500/apple_mlch2ll_a_watch_sport_smartwatch_38mm_1187204.jpg",
+      "title": "Apple",
+      "details": "Womens Watch",
+      "price": 300,
+      "productid": 4,
+      "userid": "4",
+      "id": 31
+    },
+    {
+      "image": "https://th.bing.com/th/id/R.613a8f40cb2958a6d5884c5848e034f8?rik=3R9Qxvw6jT65vA&riu=http%3a%2f%2fwww.bhphotovideo.com%2fimages%2fimages2500x2500%2fcanon_1263c005_eos_80d_dslr_camera_1225876.jpg&ehk=q7iUuM1osOg0j72aJ9G%2bAHfczWOH44VRoHxTAafiWjA%3d&risl=&pid=ImgRaw&r=0",
+      "title": "Canon EOS 80D DSLR Camera with 18-55mm Lens",
+      "details": "With 2 Batterys and 128GB SD Card",
+      "price": 700,
+      "productid": 2,
+      "userid": "4",
+      "id": 32
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.UlJOK-i5icnFsG0Qa1pXoAHaHa?pid=ImgDet&rs=1",
+      "title": "Galanz Fridge",
+      "details": "Double Door",
+      "price": 300,
+      "productid": 3,
+      "userid": "4",
+      "id": 33
+    },
+    {
+      "image": "https://media.jointlook.com/customPhotos/productImages/sunflame-mixer-grinder-JLKA04-01.jpg",
+      "title": "Sunflame",
+      "details": "500W With 3 Jars",
+      "price": 120,
+      "productid": 6,
+      "userid": "4",
+      "id": 34
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIP.QF02YKSKxP9y_6jf9jMrLgHaHa?pid=ImgDet&w=500&h=500&rs=1",
+      "title": "Samsung Fridge",
+      "details": "Double Door",
+      "price": 300,
+      "productid": 8,
+      "userid": "3",
+      "id": 35
+    }
+  ],
+  "orders": [
+    {
+      "username": "raghul",
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "BMW S1000RR",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "08883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "2200",
+      "Rentfrom": "2023-07-02",
+      "Rentto": "2023-07-06",
+      "Totaldays": 4,
+      "totalAmount": 8800,
+      "Payment": "cash",
+      "userid": 3,
+      "orderstatus": "Approval Pending",
+      "id": 1
+    },
+    {
+      "username": "demo",
+      "image": "assets\\image\\watches\\watch2.png",
+      "title": "Michael Lors",
+      "details": "Mens ",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "08883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "220",
+      "Rentfrom": "2023-07-07",
+      "Rentto": "2023-07-15",
+      "Totaldays": 8,
+      "totalAmount": 1760,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Order Accepted",
+      "id": 2
+    },
+    {
+      "username": "demo",
+      "image": "assets\\image\\cars\\car1.png",
+      "title": "BMW",
+      "details": "3 Series",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "54848151564",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": 5000,
+      "Rentfrom": "2023-07-07",
+      "Rentto": "2023-07-09",
+      "Totaldays": 2,
+      "totalAmount": 10000,
+      "Payment": "card",
+      "userid": 5,
+      "orderstatus": "Order Declined",
+      "id": 3
+    },
+    {
+      "username": "smr",
+      "image": "assets\\image\\cameras\\camera1.png",
+      "title": "camera",
+      "details": "2D",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "54848151564",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "200",
+      "Rentfrom": "2023-07-14",
+      "Rentto": "2023-07-16",
+      "Totaldays": 2,
+      "totalAmount": 400,
+      "Payment": "cash",
+      "userid": 4,
+      "orderstatus": "Approval Pending",
+      "id": 4
+    },
+    {
+      "username": "smr",
+      "image": "assets\\image\\bikes\\bike1.png",
+      "title": "Yamaha R1",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "8883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "2000",
+      "Rentfrom": "2023-07-07",
+      "Rentto": "2023-07-14",
+      "Totaldays": 7,
+      "totalAmount": 14000,
+      "Payment": "card",
+      "userid": 4,
+      "orderstatus": "Approval Pending",
+      "id": 5
+    },
+    {
+      "username": "rocky",
+      "image": "assets\\image\\bikes\\bike4.png",
+      "title": "Dayatona",
+      "details": "750CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "54848151564",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "2000",
+      "Rentfrom": "2023-07-02",
+      "Rentto": "2023-07-04",
+      "Totaldays": 2,
+      "totalAmount": 4000,
+      "Payment": "cash",
+      "userid": 3,
+      "orderstatus": "Cancelled",
+      "id": 6
+    },
+    {
+      "username": "demo",
+      "image": "assets\\image\\cameras\\camera2.png",
+      "title": "sdvsd",
+      "details": "sdvsd",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "8883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "120",
+      "Rentfrom": "2023-07-14",
+      "Rentto": "2023-07-22",
+      "Totaldays": 8,
+      "totalAmount": 960,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Cancelled",
+      "id": 7
+    },
+    {
+      "username": "demo",
+      "image": "assets\\image\\bikes\\bike1.png",
+      "title": "Yamaha R1",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "8883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "2000",
+      "Rentfrom": "2023-07-12",
+      "Rentto": "2023-07-15",
+      "Totaldays": 3,
+      "totalAmount": 6000,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Cancelled",
+      "id": 8
+    },
+    {
+      "username": "raghulsm",
+      "image": "assets\\image\\watches\\watch1.png",
+      "title": "Realme ",
+      "details": "Unisex Watch",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "08883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "100",
+      "Rentfrom": "2023-07-06",
+      "Rentto": "2023-07-07",
+      "Totaldays": 1,
+      "totalAmount": 100,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Approval Pending",
+      "id": 9
+    },
+    {
+      "username": "raghul",
+      "image": "assets\\image\\cameras\\camera3.png",
+      "title": "Sony ",
+      "details": "Mark 2 with 50mm Lense",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "8883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "600",
+      "Rentfrom": "2023-07-07",
+      "Rentto": "2023-07-08",
+      "Totaldays": 1,
+      "totalAmount": 600,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Cancelled",
+      "id": 10
+    },
+    {
+      "username": "raghul",
+      "image": "assets\\image\\cameras\\camera1.png",
+      "title": "camera",
+      "details": "2D",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "08883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": "200",
+      "Rentfrom": "2023-07-15",
+      "Rentto": "2023-07-17",
+      "Totaldays": 2,
+      "totalAmount": 400,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Order Declined",
+      "id": 11
+    },
+    {
+      "username": "raghul",
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "BMW S1000RR",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "08883539273",
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": 2200,
+      "Rentfrom": "2023-08-03",
+      "Rentto": "2023-08-05",
+      "Totaldays": 2,
+      "totalAmount": 4400,
+      "Payment": "cash",
+      "userid": 5,
+      "orderstatus": "Approval Pending",
+      "id": 12
+    },
+    {
+      "username": "raghul",
+      "image": "assets\\image\\bikes\\bike5.png",
+      "title": "GSXR 1000",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": "08883539273",
+      "idproof": "",
+      "price": 2500,
+      "Rentfrom": "2023-08-11",
+      "Rentto": "2023-08-26",
+      "Totaldays": 15,
+      "totalAmount": 37500,
+      "Payment": "cash",
+      "userid": "5",
+      "orderstatus": "Order Accepted",
+      "id": 13
+    },
+    {
+      "username": "smr",
+      "image": "assets\\image\\bikes\\bike5.png",
+      "title": "GSXR 1000",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": 54848151564,
+      "idproof": "",
+      "price": 2500,
+      "Rentfrom": "2023-08-14",
+      "Rentto": "2023-08-17",
+      "Totaldays": 3,
+      "totalAmount": 7500,
+      "Payment": "cash",
+      "userid": "4",
+      "orderstatus": "Approval Pending",
+      "id": 14
+    },
+    {
+      "username": "raghul",
+      "image": "assets\\image\\bikes\\bike2.png",
+      "title": "BMW S1000RR",
+      "details": "1000CC",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": 8883539273,
+      "idproof": "C:\\fakepath\\chart.png",
+      "price": 2200,
+      "Rentfrom": "2023-09-19",
+      "Rentto": "2023-09-28",
+      "Totaldays": 9,
+      "totalAmount": 19800,
+      "Payment": "card",
+      "userid": "3",
+      "orderstatus": "Approval Pending",
+      "id": 15
+    },
+    {
+      "username": "raghul",
+      "image": "assets\\image\\cars\\car3.png",
+      "title": "Mercedes-Benz",
+      "details": "E-Class",
+      "address": "763B,Guruvareddiyur West, Guruvareddiyur, Anthiyur, Erode",
+      "mobile": 8883539273,
+      "idproof": "C:\\fakepath\\aadhar.PNG",
+      "price": 6000,
+      "Rentfrom": "2023-12-20",
+      "Rentto": "2023-12-22",
+      "Totaldays": 2,
+      "totalAmount": 12000,
+      "Payment": "card",
+      "userid": "3",
+      "orderstatus": "Approval Pending",
+      "id": 16
+    }
+  ],
+  "loggerData": [
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-08-10T06:17:10.122Z",
+      "fileName": "main.js",
+      "lineNumber": 3223,
+      "columnNumber": 19,
+      "id": 1
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-10T06:17:17.707Z",
+      "fileName": "main.js",
+      "lineNumber": 3628,
+      "columnNumber": 23,
+      "id": 2
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-10T06:17:26.012Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 3
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-10T06:18:03.967Z",
+      "fileName": "main.js",
+      "lineNumber": 3628,
+      "columnNumber": 23,
+      "id": 4
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-10T06:18:46.700Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 5
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-10T06:22:03.063Z",
+      "fileName": "main.js",
+      "lineNumber": 3628,
+      "columnNumber": 23,
+      "id": 6
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-10T06:22:04.859Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 7
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-10T06:22:50.115Z",
+      "fileName": "main.js",
+      "lineNumber": 3628,
+      "columnNumber": 23,
+      "id": 8
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-10T06:22:52.195Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 9
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-10T08:49:18.289Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 10
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-10T08:52:08.578Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 11
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-10T08:52:14.309Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 12
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-11T05:49:41.282Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 13
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-11T05:49:46.903Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 14
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-11T05:53:13.041Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 15
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-11T05:53:20.512Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 16
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-11T05:53:47.297Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 17
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-11T05:53:52.101Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 18
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-12T04:32:31.338Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 19
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-12T04:32:49.653Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 20
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-12T09:33:06.242Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 21
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-12T09:33:35.967Z",
+      "fileName": "main.js",
+      "lineNumber": 3622,
+      "columnNumber": 23,
+      "id": 22
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-12T09:42:44.367Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 23
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-08-12T09:42:56.454Z",
+      "fileName": "main.js",
+      "lineNumber": 3605,
+      "columnNumber": 19,
+      "id": 24
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-08-12T10:01:25.792Z",
+      "fileName": "main.js",
+      "lineNumber": 3226,
+      "columnNumber": 19,
+      "id": 25
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-12T10:08:44.337Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 26
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-12T10:09:04.255Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 27
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-08-12T10:09:08.915Z",
+      "fileName": "main.js",
+      "lineNumber": 3608,
+      "columnNumber": 19,
+      "id": 28
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-08-12T10:10:47.263Z",
+      "fileName": "main.js",
+      "lineNumber": 3226,
+      "columnNumber": 19,
+      "id": 29
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-13T08:21:45.177Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 30
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T08:00:00.544Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 31
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T08:00:26.819Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 32
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T08:04:25.951Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 33
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-08-14T11:10:22.127Z",
+      "fileName": "main.js",
+      "lineNumber": 3608,
+      "columnNumber": 19,
+      "id": 34
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-08-14T11:20:23.152Z",
+      "fileName": "main.js",
+      "lineNumber": 3226,
+      "columnNumber": 19,
+      "id": 35
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T11:20:39.009Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 36
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T11:21:28.371Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 37
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-08-14T11:21:35.574Z",
+      "fileName": "main.js",
+      "lineNumber": 3608,
+      "columnNumber": 19,
+      "id": 38
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-08-14T11:22:16.723Z",
+      "fileName": "main.js",
+      "lineNumber": 3226,
+      "columnNumber": 19,
+      "id": 39
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T11:22:29.952Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 40
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T11:24:29.165Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 41
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T16:03:57.738Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 42
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T17:11:58.937Z",
+      "fileName": "main.js",
+      "lineNumber": 3223,
+      "columnNumber": 19,
+      "id": 43
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T17:13:02.270Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 44
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-08-14T17:13:12.303Z",
+      "fileName": "main.js",
+      "lineNumber": 3607,
+      "columnNumber": 19,
+      "id": 45
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-08-14T17:13:58.945Z",
+      "fileName": "main.js",
+      "lineNumber": 3226,
+      "columnNumber": 19,
+      "id": 46
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T17:14:04.721Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 47
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T17:14:19.007Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 48
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T17:16:14.031Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 49
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T17:16:55.565Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 50
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-14T17:17:49.522Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 51
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-14T17:18:22.314Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 52
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-15T05:41:48.162Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 53
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-15T05:41:59.054Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 54
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-15T10:13:45.552Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 55
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-15T10:13:51.463Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 56
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-22T02:39:40.500Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 57
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-22T02:43:57.264Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 58
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-22T02:44:01.183Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 59
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-08-22T02:48:44.422Z",
+      "fileName": "main.js",
+      "lineNumber": 3625,
+      "columnNumber": 23,
+      "id": 60
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-08-22T02:48:50.657Z",
+      "fileName": "main.js",
+      "lineNumber": 3228,
+      "columnNumber": 19,
+      "id": 61
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-09-09T09:24:00.289Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 62
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-09-09T09:25:45.386Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 63
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-09-09T09:25:52.281Z",
+      "fileName": "main.js",
+      "lineNumber": 3607,
+      "columnNumber": 19,
+      "id": 64
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-09-09T09:27:39.489Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 65
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-09-09T15:22:58.590Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 66
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-09-16T05:18:07.137Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 67
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-09-16T05:18:14.297Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 68
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-09-18T07:13:55.728Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 69
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-09-18T07:14:05.752Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 70
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-10-26T14:04:13.920Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 71
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-10-26T14:04:23.602Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 72
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-12-19T04:02:58.305Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 73
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-12-19T04:03:07.667Z",
+      "fileName": "main.js",
+      "lineNumber": 3607,
+      "columnNumber": 19,
+      "id": 74
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-12-19T04:04:38.650Z",
+      "fileName": "main.js",
+      "lineNumber": 3225,
+      "columnNumber": 19,
+      "id": 75
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedIn",
+      "timestamp": "2023-12-19T04:04:52.812Z",
+      "fileName": "main.js",
+      "lineNumber": 3624,
+      "columnNumber": 23,
+      "id": 76
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "User LoggedOut",
+      "timestamp": "2023-12-19T14:17:41.660Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 77
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedIn",
+      "timestamp": "2023-12-19T14:17:51.261Z",
+      "fileName": "main.js",
+      "lineNumber": 3607,
+      "columnNumber": 19,
+      "id": 78
+    },
+    {
+      "level": 2,
+      "additional": [],
+      "message": "Admin LoggedOut",
+      "timestamp": "2023-12-22T05:21:11.421Z",
+      "fileName": "main.js",
+      "lineNumber": 3227,
+      "columnNumber": 19,
+      "id": 79
+    }
+  ]
 }

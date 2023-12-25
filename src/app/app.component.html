@@ -1,98 +1,142 @@
+
 <div class="head">
-<div class="bars">
-<fa-icon [icon]="faBars"></fa-icon>
-<div class="barContents">
-<h4><fa-icon [icon]="faHeart"></fa-icon> Favourite</h4>
-<h4><fa-icon [icon]="faCartShopping"></fa-icon>Cart</h4>
-</div>
-</div>
-<div class="logo">
-<a routerLink="home"><img src="assets\image\logo.png" alt=""></a>
-</div>
-<!-- <div class="search">
-  <input type="text"><button>Search</button>
-</div> -->
-<div class="button" id="loginButton">
-<a routerLink="login"><fa-icon [icon]="faRightToBracket"> </fa-icon> Login</a>
-</div>
-<h1 style="color: aliceblue;">{{demo}}</h1>
-</div>
-
-<div class="segment">
-  <div>
-  <a routerLink="home"><fa-icon class="homeicon" [icon]="faHome"></fa-icon></a>
+  <div class="bars">
+  <span *ngIf="isUser||isAdmin"><fa-icon [icon]="faUser"></fa-icon> {{userName}} </span>
+  <div class="barContents">
+  <a routerLink="favourite" *ngIf="isUser && !isAdmin"><fa-icon [icon]="faHeart"></fa-icon> Favourite</a>
+  <a routerLink="orders" *ngIf="isAdmin"><fa-icon [icon]="faHistory"></fa-icon> Orders</a>
+  <a routerLink="userorders" *ngIf="isUser && !isAdmin"><fa-icon [icon]="faHistory"></fa-icon> Orders</a>
+  <a class="logoutbutton" *ngIf="isUser||isAdmin" (click)="logOut()"><fa-icon [icon]="faRightToBracket"> </fa-icon> Logout</a>
+  </div>
+  </div>
+  <div class="logo">
+  <a *ngIf="(isUser || !isUser)  && !isAdmin" routerLink="home"><img src="assets\image\logo.png" alt=""></a>
+  <a *ngIf="isAdmin  && (isUser || !isUser)" routerLink="adminhome"><img src="assets\image\logo.png" alt=""></a>
 
   </div>
-  <div class="automobile">
-  <h4 ><fa-icon [icon]="faMotorcycle"></fa-icon> Automobiles</h4>
-  <div class="automobilesub sublink">
-    <a routerLink="bike">Bike</a>
-    <a routerLink="car">Car</a>
-    <a routerLink="traveller">Traveller</a>
+
+  <!-- -----------------------------------------------------user segment------------------------------------------------------------------------ -->
+
+  <div class="segment" *ngIf="!isAdmin">
+    <div>
+    <a routerLink="home"><fa-icon  [icon]="faHome" class="homeicon"></fa-icon></a>
+    </div>
+
+    <div class="automobile segmentName">
+    <h4 ><fa-icon [icon]="faMotorcycle"></fa-icon> Automobiles
+    </h4>
+    <div class="automobilesub sublink">
+      <a routerLink="bike">Bike</a>
+      <a routerLink="car">Car</a>
+      <!-- <a routerLink="traveller">Traveller</a> -->
+    </div>
   </div>
+
+  <div class="watches segmentName">
+    <h4><fa-icon [icon]="faStopwatch"></fa-icon> Watches</h4>
+    <div class="watchessub sublink">
+      <a routerLink="digitalwatches">Digital Watches</a>
+      <a routerLink="analogwatches">Analog Watches</a>
+    </div>
+  </div>
+
+  <div class="camera segmentName">
+    <h4><fa-icon [icon]="faCamera"></fa-icon> Cameras</h4>
+    <div class="camerasub sublink">
+      <a routerLink="DSLRcameras">DSLR Cameras</a>
+      <a routerLink="digitalcameras">Digital Cameras</a>
+      <!-- <a routerLink="vediocameras">Vedio Cameras</a> -->
+    </div>
+  </div>
+
+  <div class="homeappliances segmentName">
+    <h4><fa-icon [icon]="faBlender"></fa-icon> Home Appliances</h4>
+    <div class="homeappliancessub sublink">
+      <a routerLink="refrigerator">Refrigerator</a>
+      <a routerLink="washingmachine">Washing Machine</a>
+      <a routerLink="mixer">Mixer</a>
+      <!-- <a routerLink="grinder">Grinder</a> -->
+    </div>
+  </div>
+
+  </div>
+  <!-- -------------------------------------------------admin segment--------------------------------------------------------------------------- -->
+  <div class="segment" *ngIf="isAdmin">
+    <div>
+    <a routerLink="adminhome"><fa-icon class="homeicon" [icon]="faHome"></fa-icon></a>
+
+    </div>
+    <div class="automobile segmentName">
+    <h4 ><fa-icon [icon]="faMotorcycle"></fa-icon> Automobiles admin</h4>
+    <div class="automobilesub sublink">
+      <a routerLink="adminbike">Bike</a>
+      <a routerLink="admincar">Car</a>
+      <!-- <a routerLink="admintraveller">Traveller</a> -->
+    </div>
+  </div>
+
+  <div class="watches segmentName">
+    <h4><fa-icon [icon]="faStopwatch"></fa-icon> Watches</h4>
+    <div class="watchessub sublink">
+      <a routerLink="admindigitalwatches">Digital Watches</a>
+      <a routerLink="adminanalogwatches">Analog Watches</a>
+    </div>
+  </div>
+
+  <div class="camera segmentName">
+    <h4><fa-icon [icon]="faCamera"></fa-icon> Cameras</h4>
+    <div class="camerasub sublink">
+      <a routerLink="adminDSLRcameras">DSLR Cameras</a>
+      <a routerLink="admindigitalcameras">Digital Cameras</a>
+      <!-- <a routerLink="adminvediocameras">Vedio Cameras</a> -->
+    </div>
+  </div>
+
+  <div class="homeappliances segmentName">
+    <h4><fa-icon [icon]="faBlender"></fa-icon> Home Appliances</h4>
+    <div class="homeappliancessub sublink">
+      <a routerLink="adminrefrigerator">Refrigerator</a>
+      <a routerLink="adminwashingmachine">Washing Machine</a>
+      <a routerLink="adminmixer">Mixer</a>
+      <!-- <a routerLink="admingrinder">Grinder</a> -->
+    </div>
+  </div>
+  </div>
+  <div class="button" id="loginButton">
+    <a routerLink="login" *ngIf="!isUser&&!isAdmin"><fa-icon [icon]="faRightToBracket"> </fa-icon> Login</a>
+    </div>
 </div>
 
-<div class="watches">
-  <h4><fa-icon [icon]="faStopwatch"></fa-icon> Watches</h4>
-  <div class="watchessub sublink">
-    <a routerLink="digitalwatches">Digital Watches</a>
-    <a routerLink="analogwatches">Analog Watches</a>
-  </div>
-</div>
-
-<div class="camera">
-  <h4><fa-icon [icon]="faCamera"></fa-icon> Cameras</h4>
-  <div class="camerasub sublink">
-    <a routerLink="DSLRcameras">DSLR Cameras</a>
-    <a routerLink="digitalcameras">Digital Cameras</a>
-    <a routerLink="vediocameras">Vedio Cameras</a>
-  </div>
-</div>
-
-<div class="clothes">
-  <h4><fa-icon [icon]="faShirt"></fa-icon> Clothes</h4>
-  <div class="clothessub sublink">
-    <a routerLink="partywaremens">Partyware Mens</a>
-    <a routerLink="partywarewomens">Partyware Womens</a>
-    <a routerLink="weddingwaremens">Weddingware Mens</a>
-    <a routerLink="weddingwarewomens">Weddingware Womens</a>
-  </div>
-</div>
-
-<div class="homeappliances">
-  <h4><fa-icon [icon]="faBlender"></fa-icon> Home Appliances</h4>
-  <div class="homeappliancessub sublink">
-    <a routerLink="refrigerator">Refrigerator</a>
-    <a routerLink="washingmachine">Washing Machine</a>
-    <a routerLink="mixer">Mixer</a>
-    <a routerLink="grinder">Grinder</a>
-  </div>
-</div>
-</div>
 <router-outlet></router-outlet>
 
-<footer>
-  <div class="contactus">
-    <h4>Contact Us</h4>
-    <div class="logos">
-      <a href="" id="insta"><fa-icon [icon]="faInstagram"></fa-icon></a>
-      <a href="" id="facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
-      <a href="" id="twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
-      <a href="" id="email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+  <footer>
+    <div class="contactus">
+      <h4>Contact Us</h4>
+      <div class="logos">
+        <a href="" id="insta"><fa-icon [icon]="faInstagram"></fa-icon></a>
+        <a href="" id="facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href="" id="twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
+        <a href="" id="email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+        </div>
+    </div>
+
+  <div class="aboutus">
+      <h4>About Us</h4>
+      <div class="aboutuscont">
+        <p>1/74,
+          Siruseri,
+          Chennai-603112,
+          Tamilnadu.
+          Contact No: +919988776655
+        </p>
       </div>
-  </div>
-
-<div class="aboutus">
-    <h4>About Us</h4>
-    <div class="aboutuscont">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quod, veritatis beatae ipsum hic repellat dolor totam, impedit sequi sint dignissimos ut iusto aperiam quis suscipit. Ex impedit a quod.</p>
     </div>
-  </div>
 
-  <div class="policy">
-    <h4>Policy</h4>
-    <div class="policycont">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus iure rem dicta earum voluptatem assumenda corrupti illum odio, optio porro! Perferendis, accusantium nam. Ut, quam. Eaque, aut? Ad, autem!</p>
+    <div class="policy">
+      <h4>Policy</h4>
+      <div class="policycont">
+        <p>You are responsible for any damage or loss that occurs to the rented product during the rental period.
+          If a product is damaged beyond reasonable wear and tear or lost, you may be charged for repair, replacement, or the full retail value of the product.</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>

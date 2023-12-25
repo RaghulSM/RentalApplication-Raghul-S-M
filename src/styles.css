@@ -1,49 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 body{
   margin: 0;
 }
-/* ----------------------------------------------------------contents--------------------------------------------------------------------------- */
-.container{
+.container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 400px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-.contents{
+.contents {
   width: 350px;
-  height: 500px;
-  border: 2px solid;
-  background-color:rgb(0, 0, 0);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-.contents img{
+
+.contents:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contents img {
   width: 350px;
   height: 300px;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
 }
-.contents{
-  color: white;
-}
-.contents div{
+
+.contents div {
+
   text-align: center;
 }
-.deletebutton button{
-  width: 200px;
+
+.cartbutton {
+  font-size: 25px;
+}
+
+.heart {
+  margin-left: 280px;
+  font-size: 20px;
+  color: grey;
+  transition: color 0.2s ease-in-out;
+}
+
+.heart:hover {
+  color: #ff4d4d;
+}
+.favorite-heart {
+  color: red; /* Change the color to your desired color */
+}
+
+
+.rentbutton button {
+  background-color: #81cf0c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.rentbutton button:hover {
+  background-color: rgb(62, 94, 14);
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 
 /* ------------------------------------------------------Content Form--------------------------------------------------------------------------------- */
 .productForm{
   width: 350px;
-  height: 500px;
-  border: 2px solid;
   display: flex;
   justify-content: center;
-  background-color: rgba(24, 15, 3, 0.301);
-  margin-left: 20px;
+  background-color: rgba(230, 135, 10, 0.301);
+  margin-right: 20px;
   margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .heading{
   text-align: center;
+}
+.productForm input{
+  border-radius: 20px;
 }
 .productForm div{
   margin-top: 40px;
@@ -55,8 +100,44 @@ body{
   width: 250px;
   height: 30px;
   background-color: greenyellow;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 .rentbutton button{
   width: 200px;
+  margin-bottom: 10px;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
+.deletebutton button{
+  background-color: red;
+   width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.deletebutton button:hover{
+  background-color: rgb(131, 4, 4);
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.availabilityStatus{
+  margin-bottom: 10px;
+}
+.availabilityStatus button{
+  background-color: #81cf0c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.availabilityStatus button:hover{
+  background-color: rgb(62, 94, 14);
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.availabilityStatus select{
+  background-color: rgba(0, 0, 255, 0.377);
+}
+

@@ -8,11 +8,13 @@ import { LogingaurdService } from 'src/app/services/logingaurd.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  homeproducts:any="";
-  constructor(private homeContent:AdminService, private gaurdservice:LogingaurdService){
+  homeProducts:any;
+  name:any=this.gaurdService.userName
+  id:any=this.gaurdService.userId
+
+  constructor(private homeContent:AdminService, private gaurdService:LogingaurdService){
     this.homeContent.getHomeContent().subscribe(data=>{
-      this.homeproducts=data;
+      this.homeProducts=data;
     })
   }
-  h:boolean=this.gaurdservice.isLoggedIn;
 }

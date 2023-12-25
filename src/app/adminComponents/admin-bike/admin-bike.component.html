@@ -1,19 +1,35 @@
 <div class="container">
   <div class="contents" *ngFor="let item of products">
     <div class="image">
-      <img src="{{item.image}}" alt="">
+      <img src="{{ item.image }}" alt="" />
     </div>
     <div class="title">
-      <h3>{{item.title}}</h3>
+      <h3>{{ item.title }}</h3>
     </div>
     <div class="details">
-      <h3>{{item.details}}</h3>
+      <h3>{{ item.details }}</h3>
     </div>
     <div class="price">
-      <h4>{{item.price}}</h4>
+      <h4>{{ item.price }}/Day</h4>
     </div>
     <div class="deletebutton">
-      <button (click)="deletedata(item.id)">delete</button>
+      <button (click)="deleteData(item.id)">delete</button>
+    </div>
+    <div class="">
+      <h4>Availability Status:{{ item.availability }}</h4>
+    </div>
+    <div class="availabilityStatus">
+      <button (click)="changeAvailabilityStatus(item.id)">
+        Change Availability Status
+      </button>
+      <select
+        name="availabilityData"
+        [(ngModel)]="availabilityData"
+        [(ngModel)]="item.availability"
+      >
+        <option value="Available">Available</option>
+        <option value="Unavailable">Unavailable</option>
+      </select>
     </div>
   </div>
 
@@ -25,24 +41,23 @@
       </div>
       <div>
         <label for="">Image URL:</label>
-        <input type="text" name="URL" [(ngModel)]="image">
+        <input type="text" name="URL" [(ngModel)]="image" />
       </div>
       <div>
         <label for="">Title:</label>
-        <input type="text" name="title" [(ngModel)]="title">
+        <input type="text" name="title" [(ngModel)]="title" />
       </div>
-       <div>
+      <div>
         <label for="">Details:</label>
-        <input type="text" name="details" [(ngModel)]="details">
+        <input type="text" name="details" [(ngModel)]="details" />
       </div>
       <div>
         <label for="">Price:</label>
-        <input type="text" name="price" [(ngModel)]="price">
+        <input type="number" name="price" [(ngModel)]="price" />
       </div>
       <div>
-        <button class="addbutton">Add</button>
+        <button class="addbutton" [disabled]="image==''||title==''||details==''||price==''"  >Add</button>
       </div>
     </form>
   </div>
-
-  </div>
+</div>

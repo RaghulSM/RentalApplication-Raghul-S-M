@@ -3,6 +3,8 @@ import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, CanDeactivate, C
 import { Observable } from 'rxjs';
 import { LogingaurdService } from '../services/logingaurd.service';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,10 +14,11 @@ export class CheckuserGuard implements CanActivate, CanActivateChild, CanDeactiv
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot):boolean{
     // return false;
-    if(this.logingaurd.isLoggedIn){
+    if(this.logingaurd.isAuthenticated()||this.logingaurd.isAdminLoggedin){
       return true;
     }
     else{
+      alert('Login to Proceed');
       return false;
     }
   }

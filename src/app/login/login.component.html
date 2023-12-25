@@ -4,20 +4,23 @@
       <h1>Login</h1>
     </div>
     <div class="email">
-      <input  name="email" formControlName="emails" [(ngModel)]="emailid" placeholder="EmailId">
+      <input  name="email" formControlName="emails" [(ngModel)]="emailid" placeholder="EmailId"><br>
+      <span *ngIf="loginform.controls['emails'].errors?.['required'] && loginform.controls['emails'].touched" style="color: red;">Enter Emailid</span>
+      <span *ngIf="loginform.controls['emails'].errors?.['email'] && loginform.controls['emails'].touched" style="color: red;">Enter valid emailid</span>
     </div>
     <div class="password">
       <input type="password" name="password" formControlName="password" [(ngModel)]="password" placeholder="Password">
+      <span ></span>
     </div>
-    <div class="loginbtn">
+    <div class="loginButton">
       <button [disabled]="loginform.invalid">Login</button>
+      <!-- [disabled]="loginform.invalid" -->
     </div>
     <div class="forgetpassword">
-      <a>Forgot password?</a>
+      <a routerLink="/forgotPassword">Forgot password?</a>
     </div>
     <div class="createaccount">
       <a routerLink="/signup">Create Account</a>
     </div>
   </form>
 </div>
-

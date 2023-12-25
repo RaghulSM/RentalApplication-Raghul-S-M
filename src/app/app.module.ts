@@ -25,14 +25,6 @@ import { DigitalcamerasComponent } from './usercomponents/digitalcameras/digital
 import { AdminDigitalCameraComponent } from './adminComponents/adminDigitalCamera/adminDigitalCamera.component';
 import { VediocamerasComponent } from './usercomponents/vediocameras/vediocameras.component';
 import { AdminVedioCameraComponent } from './adminComponents/adminVedioCamera/adminVedioCamera.component';
-import { PartywaremensComponent } from './usercomponents/partywaremens/partywaremens.component';
-import { AdminPartywareMenComponent } from './adminComponents/adminPartywareMen/adminPartywareMen.component';
-import { PartywarewomensComponent } from './usercomponents/partywarewomens/partywarewomens.component';
-import { AdminPartywareWomenComponent } from './adminComponents/adminPartywareWomen/adminPartywareWomen.component';
-import { WeddingwaremensComponent } from './usercomponents/weddingwaremens/weddingwaremens.component';
-import { AdminWeddingwareMenComponent } from './adminComponents/adminWeddingwareMen/adminWeddingwareMen.component';
-import { WeddingwarewomensComponent } from './usercomponents/weddingwarewomens/weddingwarewomens.component';
-import { AdminWeddingwareWomenComponent } from './adminComponents/adminWeddingwareWomen/adminWeddingwareWomen.component';
 import { RefrigeratorComponent } from './usercomponents/refrigerator/refrigerator.component';
 import { AdminRefrigeratorComponent } from './adminComponents/adminRefrigerator/adminRefrigerator.component';
 import { WashingmachineComponent } from './usercomponents/washingmachine/washingmachine.component';
@@ -41,8 +33,15 @@ import { MixerComponent } from './usercomponents/Mixer/Mixer.component';
 import { AdminMixerComponent } from './adminComponents/adminMixer/adminMixer.component';
 import { GrinderComponent } from './usercomponents/Grinder/Grinder.component';
 import { AdminGrinderComponent } from './adminComponents/adminGrinder/adminGrinder.component';
-import { LogingaurdService } from './services/logingaurd.service';
-import { CheckuserGuard } from './gaurds/checkuser.guard';
+import { FavouriteComponent } from './usercomponents/favourite/favourite.component';
+import { CartComponent } from './usercomponents/cart/cart.component';
+import { PaymentComponent } from './usercomponents/payment/payment.component';
+import { OrdersComponent } from './usercomponents/orders/orders.component';
+import { UserordersComponent } from './usercomponents/userorders/userorders.component';
+import { ForgotPasswordComponent } from './usercomponents/forgot-password/forgot-password.component';
+import { LoggerModule,NgxLoggerLevel } from 'ngx-logger';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -60,15 +59,12 @@ import { CheckuserGuard } from './gaurds/checkuser.guard';
     DSLRcamerasComponent,AdminDSLRCameraComponent,
     DigitalcamerasComponent,AdminDigitalCameraComponent,
     VediocamerasComponent,AdminVedioCameraComponent,
-    PartywaremensComponent,AdminPartywareMenComponent,
-    PartywarewomensComponent,AdminPartywareWomenComponent,
-    WeddingwaremensComponent,AdminWeddingwareMenComponent,
-    WeddingwarewomensComponent,AdminWeddingwareWomenComponent,
     RefrigeratorComponent,AdminRefrigeratorComponent,
     WashingmachineComponent,AdminWashingMachineComponent,
     MixerComponent,AdminMixerComponent,
     GrinderComponent,AdminGrinderComponent,
-    
+    FavouriteComponent,CartComponent,PaymentComponent,OrdersComponent, UserordersComponent, ForgotPasswordComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -76,7 +72,7 @@ import { CheckuserGuard } from './gaurds/checkuser.guard';
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule, LoggerModule.forRoot({serverLoggingUrl:environment.logUrl, timestampFormat: 'dd MMM,yyyy hh:mm:ss a' ,level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.TRACE})
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,11 +12,13 @@
     <div>
       <input type="password" placeholder="Password" formControlName="password" [(ngModel)]="password" name="password">
     </div>
+    <span *ngIf="signupform.controls['password'].errors?.['pattern'] && signupform.controls['password'].touched" style="color: red; text-align: center;">Enter minimum six inputs, one special character, one uppercase, one lowercase and one number</span>
     <div id="confrimpassword">
       <input type="password" placeholder="Confrim Password" formControlName="confrimpassword" [(ngModel)]="confrimpassword" name="confrimpassword">
     </div>
+    <span *ngIf="confrimpassword!=password && signupform.controls['confrimpassword'].touched" style="color:red; text-align: center;">Password dosen't match above password</span>
     <div>
-      <button [disabled]="signupform.invalid">Create Account</button>
+      <button [disabled]=" signupform.invalid || password=='' || password!=confrimpassword">Create Account</button>
     </div>
     <div class="back">
       <a routerLink="/login">Back to Login</a>

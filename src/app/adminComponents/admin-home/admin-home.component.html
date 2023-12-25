@@ -14,14 +14,15 @@
   <div class="slogan">
     <h4>{{item.slogan}}</h4>
   </div>
-  <div>
+  <div class="deletebutton">
     <button (click)="delete(item.id)">delete</button>
   </div>
 </div>
 
-<!-- --------------------------------Content Adding--------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------Content Adding Form--------------------------------------------------------------------------------------------------------------- -->
 <div class="homecontent">
   <form (submit)="addHomeItem()">
+      <h2>Home Contents</h2>
     <div>
       <label for="">Image URL:</label>
       <input type="text" name="URL" [(ngModel)]="image">
@@ -43,26 +44,22 @@
       <label for="redirect">Redirect To:</label>
     <select name="redirect" id=""  [(ngModel)]="redirect">
       <option value="bike">bike</option>
-      <option value="bike">car</option>
-      <option value="bike">traveller</option>
-      <option value="bike">digitalwatchs</option>
-      <option value="bike">analogwatches</option>
-      <option value="bike">DSLRcameras</option>
-      <option value="bike">digitalcameras</option>
-      <option value="bike">vediocameras</option>
-      <option value="bike">partywaremens</option>
-      <option value="bike">partywarewomens</option>
-      <option value="bike">weddingwaremens</option>
-      <option value="bike">weddingwarewomens</option>
-      <option value="bike">refrigerator</option>
-      <option value="bike">washingmachine</option>
-      <option value="bike">aircooler</option>
-      <option value="bike">mixer</option>
-      <option value="bike">grinder</option>
+      <option value="car">car</option>
+      <option value="traveller">traveller</option>
+      <option value="digitalwatche">digitalwatches</option>
+      <option value="analogwatches">analogwatches</option>
+      <option value="DSLRcameras">DSLRcameras</option>
+      <option value="digitalcameras">digitalcameras</option>
+      <option value="vediocameras">vediocameras</option>
+      <option value="refrigerator">refrigerator</option>
+      <option value="washingmachine">washingmachine</option>
+      <option value="aircooler">aircooler</option>
+      <option value="mixer">mixer</option>
+      <option value="grinder">grinder</option>
     </select>
   </div>
     <div>
-      <button class="addbtn">Add</button>
+      <button class="addButton">Add</button>
     </div>
   </form>
 </div>

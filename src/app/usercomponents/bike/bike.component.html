@@ -1,5 +1,9 @@
 <div class="container">
   <div class="contents" *ngFor="let item of products">
+    <div class="cartbutton">
+      <a (click)="addtoFavourite(item.id,item.title)" class="heart" [ngClass]="{'favorite-heart': isFavorite(item.id,item.title)}"><fa-icon [icon]="faHeart"></fa-icon></a>
+    </div >
+
     <div class="image">
       <img src="{{item.image}}" alt="">
     </div>
@@ -10,11 +14,14 @@
       <h3>{{item.details}}</h3>
     </div>
     <div class="price">
-      <h4>{{item.price}}</h4>
+      <h4>{{item.price|currency:'INR'}}/Day</h4>
+    </div>
+    <div *ngIf="item.availability=='Unavailable'" >
+      <h4 style="color: red;" >Currently Unavailable</h4>
     </div>
     <div class="rentbutton">
-      <button routerLink="/payment">Rent</button>
+      <button  (click)="payment(item.id)" [disabled]="item.availability=='Unavailable'" >Rent</button>
     </div>
   </div>
-
   </div>
+

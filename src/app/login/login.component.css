@@ -5,9 +5,10 @@
   align-items: center;
   justify-content: center;
   height: 600px;
-  background-image: url("/assets/image/login.png");
+  background-image: url("/assets/image/login.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  
 
 }
 .form div{
@@ -20,8 +21,7 @@
 }
 form{
  width: 400px;
- height: 420px;
- background-color: rgba(43, 98, 149, 0.766);
+ background-color: rgba(7, 13, 19, 0.847);
  border-radius: 10px;
  display: flex;
  flex-direction: column;
@@ -32,6 +32,7 @@ input{
   border-radius: 20px;
   background-color:rgba(128, 128, 128, 0.755);
   width: 250px;
+  color: white;
 }
 input::placeholder{
  text-align: center;
@@ -53,4 +54,7 @@ input.ng-touched{
 }
 input.ng-valid{
   border: 2px solid greenyellow;
+}
+.createaccount{
+  margin-bottom: 10px;
 }

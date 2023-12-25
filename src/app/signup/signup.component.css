@@ -4,9 +4,10 @@
   align-items: center;
   justify-content: center;
   height: 600px;
-  margin: 0;
-  background-image: url("/assets/image/login.png");
+  margin: 0px;
+  background-image: url("/assets/image/login.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
 }
 .form div{
@@ -19,8 +20,7 @@
 }
 form{
  width: 400px;
- height: 500px;
- background-color: rgba(43, 98, 149, 0.766);
+ background-color:rgba(7, 13, 19, 0.847);
  border-radius: 10px;
  display: flex;
  flex-direction: column;
@@ -32,6 +32,7 @@ input{
   border: none;
   background-color:rgba(128, 128, 128, 0.599);
   width: 250px;
+  color: white;
 }
 input::placeholder{
  text-align: center;
@@ -50,6 +51,9 @@ button{
 .back >a{
   text-decoration: none;
   color: white;
+}
+.back{
+ margin-bottom: 10px;
 }
 input.ng-touched{
   border: 2px solid red;

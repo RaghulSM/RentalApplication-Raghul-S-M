@@ -1,3 +1,86 @@
-<p>
-  payment works!
-</p>
+<form  class="payform" [formGroup]="payform">
+<div class="container">
+    <div class="content">
+      <div class="image">
+        <img src="{{products.image}}" alt="">
+      </div>
+      <div class="title">
+        <h3>{{products.title}}</h3>
+      </div>
+      <div class="details">
+        <h3>{{products.details}}</h3>
+      </div>
+      <div class="price">
+        <h4>{{products.price|currency:'INR'}}/Day</h4>
+      </div>
+    </div>
+
+<!------------------------------------------------------------------->
+<div class="rentDetails">
+  <div>
+    <label for="">Name:</label>
+    <input type="text" formControlName="name" name="username" [(ngModel)]="userName">
+    <span style="color: red;" *ngIf="payform.controls['name'].invalid&&payform.controls['name'].touched">Name is required</span>
+  </div>
+  <div>
+    <label for="">Mobile Number:</label>
+    <input type="number" formControlName="mobileNumber" name="mobile" [(ngModel)]="mobile" >
+    <span style="color: red;" *ngIf="payform.controls['mobileNumber'].invalid&&payform.controls['mobileNumber'].touched">Mobile Number is required</span>
+  </div>
+  <div class="address">
+    <label for="">Address:</label>
+    <input type="text" formControlName="addressDetail" name="address" [(ngModel)]="address" >
+    <span style="color: red;" *ngIf="payform.controls['addressDetail'].invalid&&payform.controls['addressDetail'].touched">Address is required</span>
+  </div>
+  <div>
+    <label for="">Id Proof(JPG or PNG):</label>
+    <input type="file"  formControlName="idFile" name="idproof" [(ngModel)]="idProof">
+    <span style="color: red;" *ngIf="payform.controls['idFile'].invalid&&payform.controls['idFile'].touched">Id is required</span>
+  </div>
+
+  <div>
+      <label for="from">From</label>
+      <input type="date" formControlName="fromDate" name="from" [(ngModel)]="from" >
+      <span style="color: red;" *ngIf="payform.controls['fromDate'].invalid&&payform.controls['fromDate'].touched">required</span>
+      <label for="from">To</label>
+      <input (click)="calculateDate()" type="date" formControlName="toDate" name="to" [(ngModel)]="to" >
+      <span style="color: red;" *ngIf="payform.controls['toDate'].invalid&&payform.controls['toDate'].touched">required</span>
+  </div>
+
+  <div>
+    <label for="dayscalc">No Of Days: {{days|number}}</label>
+  </div>
+  <div>
+    <h3>Total Amount:{{totalAmount|currency:'INR'}}</h3>
+  </div>
+  <div class="paymentType">
+    <div>
+    <label for="cash">Cash</label>
+    <input name="pay" type="radio"  formControlName="payType" value="cash" [(ngModel)]="paymentType">
+  </div>
+  <div>
+    <label for="card">Card</label>
+    <input name="pay" type="radio" formControlName="payType"  value="card" [(ngModel)]="paymentType">
+    <span style="color: red;" *ngIf="payform.controls['payType'].invalid&&payform.controls['payType'].touched">required</span>
+  </div>
+  <div class="cardDetails"  *ngIf="paymentType=='card'">
+    <div  *ngIf="paymentType=='card'">
+    <label for="">Card Number</label>
+    <input type="number" formControlName="cardNumber">
+  </div>
+  <div  *ngIf="paymentType=='card'">
+    <label for="">Expiry Date</label>
+    <input class="expiry" type="number" formControlName="expiryDate" placeholder="MM"><input class="expiry" type="number" formControlName="expiryYear" placeholder="YY">
+  </div>
+  <div  *ngIf="paymentType=='card'">
+    <label for="">CCV</label>
+    <input type="number" formControlName="ccv">
+  </div>
+  </div>
+</div>
+  <div>
+  <button class="paybutton" [disabled]="days<1||payform.invalid" (click)="rent()">Pay</button>
+</div>
+</div>
+</div>
+</form>

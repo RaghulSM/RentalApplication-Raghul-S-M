@@ -14,17 +14,28 @@ import { DSLRcamerasComponent } from './usercomponents/DSLRcameras/DSLRcameras.c
 import { GrinderComponent } from './usercomponents/Grinder/Grinder.component';
 import { HomeComponent } from './usercomponents/home/home.component';
 import { MixerComponent } from './usercomponents/Mixer/Mixer.component';
-import { PartywaremensComponent } from './usercomponents/partywaremens/partywaremens.component';
-import { PartywarewomensComponent } from './usercomponents/partywarewomens/partywarewomens.component';
 import { RefrigeratorComponent } from './usercomponents/refrigerator/refrigerator.component';
 import { TravellerComponent } from './usercomponents/traveller/traveller.component';
 import { VediocamerasComponent } from './usercomponents/vediocameras/vediocameras.component';
 import { WashingmachineComponent } from './usercomponents/washingmachine/washingmachine.component';
-import { WeddingwaremensComponent } from './usercomponents/weddingwaremens/weddingwaremens.component';
-import { WeddingwarewomensComponent } from './usercomponents/weddingwarewomens/weddingwarewomens.component';
 import { AdmincarComponent } from './adminComponents/admincar/admincar.component';
 import { PaymentComponent } from './usercomponents/payment/payment.component';
 import { CheckuserGuard } from './gaurds/checkuser.guard';
+import { FavouriteComponent } from './usercomponents/favourite/favourite.component';
+import { CartComponent } from './usercomponents/cart/cart.component';
+import { AdminDigitalWatchComponent } from './adminComponents/adminDigitalWatch/adminDigitalWatch.component';
+import { AdminAnalogWatchComponent } from './adminComponents/adminAnalogWatch/adminAnalogWatch.component';
+import { AdminDSLRCameraComponent } from './adminComponents/adminDSLRCamera/adminDSLRCamera.component';
+import { AdminDigitalCameraComponent } from './adminComponents/adminDigitalCamera/adminDigitalCamera.component';
+import { AdminVedioCameraComponent } from './adminComponents/adminVedioCamera/adminVedioCamera.component';
+import { AdminRefrigeratorComponent } from './adminComponents/adminRefrigerator/adminRefrigerator.component';
+import { AdminWashingMachineComponent } from './adminComponents/adminWashingMachine/adminWashingMachine.component';
+import { AdminMixerComponent } from './adminComponents/adminMixer/adminMixer.component';
+import { AdminGrinderComponent } from './adminComponents/adminGrinder/adminGrinder.component';
+import { OrdersComponent } from './usercomponents/orders/orders.component';
+import { UserordersComponent } from './usercomponents/userorders/userorders.component';
+import { ForgotPasswordComponent } from './usercomponents/forgot-password/forgot-password.component';
+import { AuthGuard } from './gaurds/auth.guard';
 
 const routes: Routes = [
   {
@@ -34,6 +45,10 @@ const routes: Routes = [
   {
     path:'signup',
     component:SignupComponent
+  },
+  {
+    path:'forgotPassword',
+    component:ForgotPasswordComponent
   },
   {
     path:'payment',
@@ -49,8 +64,26 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
+    path:'favourite',
+    component:FavouriteComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path:'cart',
+    component:CartComponent,
+    canActivate:[CheckuserGuard]
+  },
+  {
+    path:'orders',
+    component:OrdersComponent,
+  },
+  {
+    path:'userorders',
+    component:UserordersComponent,
+  },
+  {
     path:'bike',
-    component:BikeComponent
+    component:BikeComponent,
   },
   {
     path:'car',
@@ -79,22 +112,6 @@ const routes: Routes = [
   {
     path:'vediocameras',
     component:VediocamerasComponent
-  },
-  {
-    path:'partywaremens',
-    component:PartywaremensComponent
-  },
-  {
-    path:'partywarewomens',
-    component:PartywarewomensComponent
-  },
-  {
-    path:'weddingwaremens',
-    component:WeddingwaremensComponent
-  },
-  {
-    path:'weddingwarewomens',
-    component:WeddingwarewomensComponent
   },
   {
     path:'refrigerator',
@@ -131,6 +148,42 @@ const routes: Routes = [
   {
     path:'admintraveller',
     component:AdmintravellerComponent
+  },
+  {
+    path:'admindigitalwatches',
+    component:AdminDigitalWatchComponent
+  },
+  {
+    path:'adminanalogwatches',
+    component:AdminAnalogWatchComponent
+  },
+  {
+    path:'adminDSLRcameras',
+    component:AdminDSLRCameraComponent
+  },
+  {
+    path:'admindigitalcameras',
+    component:AdminDigitalCameraComponent
+  },
+  {
+    path:'adminvediocameras',
+    component:AdminVedioCameraComponent
+  },
+  {
+    path:'adminrefrigerator',
+    component:AdminRefrigeratorComponent
+  },
+  {
+    path:'adminwashingmachine',
+    component:AdminWashingMachineComponent
+  },
+  {
+    path:'adminmixer',
+    component:AdminMixerComponent
+  },
+  {
+    path:'admingrinder',
+    component:AdminGrinderComponent
   },
   {
     path:'**',

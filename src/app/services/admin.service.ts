@@ -27,6 +27,11 @@ getBikeContent(){
 deleteBikeContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/bikes/"+id);
 }
+getFavouriteBikeContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/bikes/"+id)
+}
+
+
 // -------------------------------------------admin car datas-----------------------------------------------------------------
 pushCarContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/cars",Content)
@@ -36,6 +41,9 @@ getCarContent(){
 }
 deleteCarContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/cars/"+id);
+}
+getFavouriteCarContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/cars/"+id)
 }
 // ---------------------------------------------admin traveller content----------------------------------------------------------------------------------
 pushTravellerContent(Content:any){
@@ -47,6 +55,9 @@ getTravellerContent(){
 deleteTravellerContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/traveller/"+id);
 }
+getFavouriteTravellerContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/traveller/"+id)
+}
 // ---------------------------------------------admin digital watch content----------------------------------------------------------------------------------
 pushDigitalWatchContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/digitalWatches",Content)
@@ -56,6 +67,9 @@ getDigitalWatchContent(){
 }
 deleteDigitalWatchContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/digitalWatches/"+id);
+}
+getFavouriteDigitalWatchContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/digitalWatches/"+id)
 }
 // ---------------------------------------------admin analog watch content----------------------------------------------------------------------------------
 pushAnalogWatchContent(Content:any){
@@ -67,6 +81,9 @@ getAnalogWatchContent(){
 deleteAnalogWatchContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/analogWatches/"+id);
 }
+getFavouriteAnalogWatchContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/analogWatches/"+id)
+}
 // ---------------------------------------------admin DSLRCamera content----------------------------------------------------------------------------------
 pushDSLRCameraContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/DSLRCameras",Content)
@@ -76,6 +93,9 @@ getDSLRCameraContent(){
 }
 deleteDSLRCameraContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/DSLRCameras/"+id);
+}
+getFavouriteDSLRCameraContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/DSLRCameras/"+id)
 }
 // ---------------------------------------------admin digitalCamera content----------------------------------------------------------------------------------
 pushDigitalCameraContent(Content:any){
@@ -87,6 +107,9 @@ getDigitalCameraContent(){
 deleteDigitalCameraContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/digitalCameras/"+id);
 }
+getFavouriteDigitalCameraContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/digitalCameras/"+id)
+}
 // ---------------------------------------------admin vedioCamera content----------------------------------------------------------------------------------
 pushVedioCameraContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/vedioCameras",Content)
@@ -96,6 +119,9 @@ getVedioCameraContent(){
 }
 deleteVedioCameraContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/vedioCameras/"+id);
+}
+getFavouriteVedioCameraContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/vedioCameras/"+id)
 }
 // ---------------------------------------------admin partywareMen content----------------------------------------------------------------------------------
 pushPartywareMenContent(Content:any){
@@ -107,6 +133,9 @@ getPartywareMenContent(){
 deletePartywareMenContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/partywareMen/"+id);
 }
+getFavouritePartywareMenContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/partywareMen/"+id)
+}
 // ---------------------------------------------admin partywareWomen content----------------------------------------------------------------------------------
 pushPartywareWomenContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/partywareWomen",Content)
@@ -116,6 +145,9 @@ getPartywareWomenContent(){
 }
 deletePartywareWomenContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/partywareWomen/"+id);
+}
+getFavouritePartywareWomenContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/partywareWomen/"+id)
 }
 // ---------------------------------------------admin weddingwareMen content----------------------------------------------------------------------------------
 pushWeddingwareMenContent(Content:any){
@@ -127,6 +159,9 @@ getWeddingwareMenContent(){
 deleteWeddingwareMenContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/weddingwareMen/"+id);
 }
+getFavouriteWeddingwareMenContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/weddingwareMen/"+id)
+}
 // ---------------------------------------------admin weddingwareWomen content----------------------------------------------------------------------------------
 pushWeddingwareWomenContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/weddingwareWomen",Content)
@@ -136,6 +171,9 @@ getWeddingwareWomenContent(){
 }
 deleteWeddingwareWomenContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/weddingwareWomen/"+id);
+}
+getFavouriteWeddingwareWomenContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/weddingwareWomen/"+id)
 }
 // ---------------------------------------------admin refrigerator content----------------------------------------------------------------------------------
 pushRefrigeratorContent(Content:any){
@@ -147,6 +185,9 @@ getRefrigeratorContent(){
 deleteRefrigeratorContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/refrigerator/"+id);
 }
+getFavouriteRefrigeratorContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/refrigerator/"+id)
+}
 // ---------------------------------------------admin washingMachine content----------------------------------------------------------------------------------
 pushWashingMachineContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/washingMachine",Content)
@@ -156,6 +197,9 @@ getWashingMachineContent(){
 }
 deleteWashingMachineContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/washingMachine/"+id);
+}
+getFavouriteWashingMachineContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/washingMachine/"+id)
 }
 // ---------------------------------------------admin mixer content----------------------------------------------------------------------------------
 pushMixerContent(Content:any){
@@ -167,6 +211,9 @@ getMixerContent(){
 deleteMixerContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/mixer/"+id);
 }
+getFavouriteMixerContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/mixer/"+id)
+}
 // ---------------------------------------------admin grinder content----------------------------------------------------------------------------------
 pushGrinderContent(Content:any){
   return this.adminDatas.post("http://localhost:3000/grinder",Content)
@@ -177,5 +224,8 @@ getGrinderContent(){
 deleteGrinderContent(id:any){
   return this.adminDatas.delete("http://localhost:3000/grinder/"+id);
 }
-
+getFavouriteGrinderContent(id:any){
+  return this.adminDatas.get("http://localhost:3000/grinder/"+id)
+}
+// -----------------------------------------------add to favourite ------------------------------------------------------------------------------------------------
 }

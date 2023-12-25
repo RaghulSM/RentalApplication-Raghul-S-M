@@ -1,5 +1,5 @@
 <div class="home">
-<div id="adminhome" *ngFor="let item of homeproducts" routerLink="/{{item.redirect}}">
+<div id="adminhome" *ngFor="let item of homeProducts" routerLink="/{{item.redirect}}">
   <div class="image">
     <img src="{{item.image}}" alt="">
   </div>
@@ -13,6 +13,4 @@
     <h4>{{item.slogan}}</h4>
   </div>
 </div>
-<h1>{{h}}</h1>
 </div>
-

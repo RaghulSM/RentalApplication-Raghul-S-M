@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AdminService } from 'src/app/services/admin.service';
 
@@ -13,28 +14,39 @@ export class AdminAnalogWatchComponent implements OnInit {
   details:any="";
   price:any="";
   products:any;
- constructor(private adminService:AdminService){
+  availabilityData:any;
+ constructor(private adminService:AdminService, private http:HttpClient){}
+ ngOnInit() {
   this.adminService.getAnalogWatchContent().subscribe(data=>{
     this.products=data;
   })
- }
+}
+
  addItem(){
   let Content={
     image:this.image,
     title:this.title,
     details:this.details,
-    price:this.price
+    price:this.price,
+    availability:"Available"
   }
   this.adminService.pushAnalogWatchContent(Content).subscribe(data=>{
     alert("Content Added")
+    this.ngOnInit()
   })
 }
-deletedata(id:any){
+deleteData(id:any){
  this.adminService.deleteAnalogWatchContent(id).subscribe(data=>{
   alert("Deleted");
+  this.ngOnInit()
  })
 }
-  ngOnInit() {
-  }
+
+changeAvailabilityStatus(id:any){
+  if(confirm("Admin wants to change availability Status ")){
+  this.http.patch("http://localhost:3000/analogWatches/"+id,{availability:this.availabilityData}).subscribe()
+  this.ngOnInit()
+}
+}
 
 }

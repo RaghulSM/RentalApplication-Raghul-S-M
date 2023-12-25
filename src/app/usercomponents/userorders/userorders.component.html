@@ -1,0 +1,59 @@
+<div class="container">
+  <div *ngFor="let item of details.reverse()">
+  <div class="paydetails"  *ngIf="item.userid==currentUserId" [ngStyle]="{'background-color': (item.orderstatus=='Cancelled') ? 'rgba(255, 0, 0, 0.2)' : ( item.orderstatus=='Order Declined') ? 'rgba(0, 128, 0, 0.2)' : 'white' }">
+    <div class="image">
+      <img src="{{item.image}}" alt="">
+    </div>
+    <div class="title">
+      <h3>{{item.title}}</h3>
+    </div>
+    <div class="details">
+      <h3>{{item.details}}</h3>
+    </div>
+    <div class="price">
+      <h4>{{item.price|currency:'INR'}}/Day</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Name:</span> {{item.username}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Mobile:</span> {{item.mobile}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Address:</span> {{item.address}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Idproof:</span> {{item.idproof}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Rent From:</span> {{item.Rentfrom}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Rent To:</span> {{item.Rentto}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Total Days:</span> {{item.Totaldays}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Total Amount:</span> {{item.totalAmount}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Payment Type:</span> {{item.Payment}}</h4>
+    </div>
+    <div>
+      <h4><span class="highlightedText">Userid:</span> {{item.userid}}</h4>
+    </div>
+    <div>
+      <h4 *ngIf="item.orderstatus=='Order Accepted'" style="color: green;"><span class="highlightedText">Order Status:</span> {{item.orderstatus}}</h4>
+      <h4 *ngIf="item.orderstatus=='Order Declined'" style="color: red;"><span class="highlightedText">Order Status:</span> {{item.orderstatus}}</h4>
+      <h4 *ngIf="item.orderstatus=='Cancelled'" style="color: red;"><span class="highlightedText">Order Status:</span> {{item.orderstatus}}</h4>
+      <h4 *ngIf="item.orderstatus=='Approval Pending'" style="color: black;"><span class="highlightedText">Order Status:</span> {{item.orderstatus}}</h4>
+    </div>
+    <div >
+      <button class="cancelbutton" (click)="cancelorder(item.id)" [disabled]="item.orderstatus=='Cancelled' || item.orderstatus=='Order Declined' ">Cancel order</button>
+    </div>
+</div>
+</div>
+</div>
+
+
