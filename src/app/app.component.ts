@@ -53,7 +53,7 @@ ngOnInit() {
     this.router.navigateByUrl('home');
     localStorage.removeItem('userName')
     if(this.userName==environment.adminName){
-    this.logger.info('Admin LoggedOut')
+    this.logger.info('Admin LoggedOut') 
     }
     else{
       this.logger.info('User LoggedOut')

@@ -1,5 +1,5 @@
 <div class="paycontainer">
-  <div class="paydetails" *ngFor="let item of details.reverse()" [ngStyle]="{'background-color': (item.orderstatus=='Cancelled') ? 'rgba(255, 0, 0, 0.2)' : ( item.orderstatus=='Order Declined') ? 'rgba(0, 128, 0, 0.2)' : 'white' }">
+  <div class="paydetails" *ngFor="let item of details.reverse()" [ngStyle]="{'background-color': (item.orderstatus=='Cancelled') ? 'rgba(255, 0, 0, 0.2)' : ( item.orderstatus=='Order Declined') ? 'rgba(255, 0, 0, 0.2)' :( item.orderstatus=='Approval Pending') ? 'rgba(255, 255, 255, 0.826)': ( item.orderstatus=='Order Accepted') ? 'rgba(0, 128, 0, 0.2)' : 'white' }">
 
     <div class="image">
       <img src="{{item.image}}" alt="">
